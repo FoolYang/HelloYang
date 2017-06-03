@@ -1,0 +1,11 @@
+package basic_1;
+
+public class MallardDark extends Duck {
+
+	@Override
+	public void dispaly() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

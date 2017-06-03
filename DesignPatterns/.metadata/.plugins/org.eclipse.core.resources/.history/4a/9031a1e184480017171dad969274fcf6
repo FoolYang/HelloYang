@@ -1,0 +1,7 @@
+package basic_1;
+
+public abstract class Duck {
+	protect FlyBehavior mFlyBehavior;
+	protect int a;
+	
+}

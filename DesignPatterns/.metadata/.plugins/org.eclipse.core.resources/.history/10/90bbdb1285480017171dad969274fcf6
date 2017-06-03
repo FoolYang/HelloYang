@@ -1,0 +1,11 @@
+package basic_1;
+
+public abstract class Duck {
+	FlyBehavior mFlyBehavior;
+	QuackBehavior mQuackBehavior;
+	
+	public void swim() {
+		System.out.println(" i can  swim ");
+	}
+	
+}

@@ -1,0 +1,5 @@
+package behavior.copy;
+
+public interface QuackBehavior {
+	void quack();
+}

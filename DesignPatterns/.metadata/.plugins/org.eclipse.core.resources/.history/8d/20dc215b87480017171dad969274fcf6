@@ -1,0 +1,13 @@
+package basic_1;
+
+public class MallardDuck extends Duck {
+	
+	public public MallardDuck() {
+	}
+
+	@Override
+	public void dispaly() {
+		System.out.println("i am a mallard duck");
+	}
+
+}

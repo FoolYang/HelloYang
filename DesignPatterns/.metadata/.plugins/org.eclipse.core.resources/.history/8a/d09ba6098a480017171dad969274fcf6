@@ -1,0 +1,5 @@
+package behavior.copy;
+
+public interface FlyBehavior {
+	void fly();
+}
