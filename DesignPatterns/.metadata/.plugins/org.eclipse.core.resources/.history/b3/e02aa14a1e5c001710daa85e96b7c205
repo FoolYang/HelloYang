@@ -1,0 +1,7 @@
+package singleton_5;
+/*
+ * 单例模式
+ */
+public class Singleton2 {
+	
+}

@@ -1,7 +1,0 @@
-package basic_1;
-
-public class Duck {
-	public static void main(String[] a) {
-		System.out.println("----");
-	}
-}

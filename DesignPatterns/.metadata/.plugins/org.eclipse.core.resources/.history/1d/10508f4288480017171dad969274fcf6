@@ -1,8 +1,0 @@
-package basic_1;
-
-public class DuckTest {
-	public static void main(String[] args) {
-		
-	}
-
-}

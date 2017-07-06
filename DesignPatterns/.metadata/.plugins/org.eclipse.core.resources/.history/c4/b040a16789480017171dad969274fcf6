@@ -1,8 +1,0 @@
-package behavior;
-
-public class Snippet {
-	public static void main(String[] args) {
-		1.我听见一阵急促的敲门声。2.我醒了过来。3.我打开了门，看见你站在门外。4.你说想我了，然后给了我一个结实的大拥抱。—— 其实正确顺序是1，3，4，2，当然如果是2413呢?细思极恐。
-	}
-}
-

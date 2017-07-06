@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="basic_1.FlyBehavior"/>
+<fullyQualifiedTypeName name="basic_1.FlyWithWings"/>
+<fullyQualifiedTypeName name="basic_1.QuackBehavior"/>
+<fullyQualifiedTypeName name="basic_1.MallardDuck"/>
+<fullyQualifiedTypeName name="basic_1.FlyNoWay"/>
+<fullyQualifiedTypeName name="observer_2.Observer"/>
+<fullyQualifiedTypeName name="observer_2.Subject"/>
+<fullyQualifiedTypeName name="observer_2.DisplayElement"/>
+<fullyQualifiedTypeName name="observer_2.WeatherData"/>
+<fullyQualifiedTypeName name="observer_2.CurrentCoditionDisplay"/>
+<fullyQualifiedTypeName name="decorator_3.CondimentDecorator"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="decorator_3.Beverage"/>
+<fullyQualifiedTypeName name="decorator_3.Espresso"/>
+<fullyQualifiedTypeName name="decorator_3.Mocha"/>
+<fullyQualifiedTypeName name="decorator_3.Whip"/>
+<fullyQualifiedTypeName name="decorator_3.Soy"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="factory_4.NYStyleCheesePizza"/>
+<fullyQualifiedTypeName name="factory_4.PizzaStore"/>
+<fullyQualifiedTypeName name="factory_4.NYPizzaStore"/>
+<fullyQualifiedTypeName name="factory_4.Dough"/>
+<fullyQualifiedTypeName name="factory_4.ThinCrustDough"/>
+<fullyQualifiedTypeName name="factory_4.MarinariSauce"/>
+<fullyQualifiedTypeName name="factory_4.ReggianoCheese"/>
+<fullyQualifiedTypeName name="factory_4.PizzaIngredientFactory"/>
+<fullyQualifiedTypeName name="factory_4.NYPizzaIngredientFactory"/>
+<fullyQualifiedTypeName name="factory_4.ChicagoStyleCheesePizza"/>
+<fullyQualifiedTypeName name="singleton_5.Singleton"/>
+</qualifiedTypeNameHistroy>

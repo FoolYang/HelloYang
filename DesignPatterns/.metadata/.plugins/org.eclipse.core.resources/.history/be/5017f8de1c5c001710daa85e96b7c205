@@ -1,0 +1,15 @@
+package singleton_5;
+/*
+ * 单例模式
+ */
+public class Singleton {
+	private static Singleton mInstance;
+	private Singleton(){}
+	
+	public synchronized Singleton getInstance() {
+		if (mInstance == null) {
+			mInstance = new Singleton();
+		}
+		return mInstance;
+	}
+}
