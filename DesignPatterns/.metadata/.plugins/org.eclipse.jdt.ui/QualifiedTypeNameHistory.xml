@@ -29,4 +29,13 @@
 <fullyQualifiedTypeName name="factory_4.NYPizzaIngredientFactory"/>
 <fullyQualifiedTypeName name="factory_4.ChicagoStyleCheesePizza"/>
 <fullyQualifiedTypeName name="singleton_5.Singleton"/>
+<fullyQualifiedTypeName name="command_6.SimpleRemoteControl"/>
+<fullyQualifiedTypeName name="command_6.Light"/>
+<fullyQualifiedTypeName name="command_6.Command"/>
+<fullyQualifiedTypeName name="command_6.NoCommand"/>
+<fullyQualifiedTypeName name="command_6.RemoteControl"/>
+<fullyQualifiedTypeName name="command_6.LightOnCommand"/>
+<fullyQualifiedTypeName name="adapter.MallardDuck"/>
+<fullyQualifiedTypeName name="adapter.WildTurkey"/>
+<fullyQualifiedTypeName name="adapter.TurkeyAdapter"/>
 </qualifiedTypeNameHistroy>
