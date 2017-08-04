@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="decorator_3.Mocha"/>
 <fullyQualifiedTypeName name="decorator_3.Whip"/>
 <fullyQualifiedTypeName name="decorator_3.Soy"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="factory_4.NYStyleCheesePizza"/>
 <fullyQualifiedTypeName name="factory_4.PizzaStore"/>
 <fullyQualifiedTypeName name="factory_4.NYPizzaStore"/>
@@ -39,4 +38,13 @@
 <fullyQualifiedTypeName name="adapter.WildTurkey"/>
 <fullyQualifiedTypeName name="adapter.TurkeyAdapter"/>
 <fullyQualifiedTypeName name="template_8.CaffeineBeverage"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="iterator_9.MenuItem"/>
+<fullyQualifiedTypeName name="iterator_9.Iterator"/>
+<fullyQualifiedTypeName name="iterator_9.DinerMenuIterator"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="iterator_9.PanckakeHouseIterator"/>
+<fullyQualifiedTypeName name="iterator_9.PancakeHouseMenu"/>
+<fullyQualifiedTypeName name="iterator_9.Waitress"/>
 </qualifiedTypeNameHistroy>
