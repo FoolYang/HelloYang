@@ -1,4 +1,7 @@
+AbstractTextEditor.Color.Background=199,237,204
+AbstractTextEditor.Color.Background.SystemDefault=false
 eclipse.preferences.version=1
+lineNumberColor=199,237,204
 lineNumberRuler=false
 overviewRuler_migration=migrated_3.1
 spellingEnabled=false
