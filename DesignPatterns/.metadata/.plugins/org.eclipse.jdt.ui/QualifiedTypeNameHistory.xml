@@ -47,4 +47,11 @@
 <fullyQualifiedTypeName name="iterator_9.PanckakeHouseIterator"/>
 <fullyQualifiedTypeName name="iterator_9.PancakeHouseMenu"/>
 <fullyQualifiedTypeName name="iterator_9.Waitress"/>
+<fullyQualifiedTypeName name="state_10.NoQuarterState"/>
+<fullyQualifiedTypeName name="state_10.HasQuarterState"/>
+<fullyQualifiedTypeName name="state_10.SoldOutState"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyle"/>
+<fullyQualifiedTypeName name="state_10.WinnerState"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="state_10.GumballMachine"/>
 </qualifiedTypeNameHistroy>
