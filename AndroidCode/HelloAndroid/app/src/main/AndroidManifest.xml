@@ -16,11 +16,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.TestActivity1"/>
-        <activity android:name=".activity.TestActivity2"/>
-        <activity android:name=".activity.TestActivity3"/>
-        <activity android:name=".activity.TestActivity4"/>
-
+        <activity android:name="com.example.liyang.helloandroid.activity.TestActivity1_CustomView"/>
+        <activity android:name="com.example.liyang.helloandroid.activity.TestActivity2_CustomViewGroup"/>
+        <activity android:name="com.example.liyang.helloandroid.activity.TestActivity3_Scroll"/>
+        <activity android:name="com.example.liyang.helloandroid.activity.TestActivity4_Draw"/>
+        <activity android:name="com.example.liyang.helloandroid.activity.TestActivity5_SurfaceView"/>
     </application>
 
 </manifest>

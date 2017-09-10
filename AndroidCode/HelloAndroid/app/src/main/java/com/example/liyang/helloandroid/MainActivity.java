@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.liyang.helloandroid.activity.TestActivity1;
-import com.example.liyang.helloandroid.activity.TestActivity2;
-import com.example.liyang.helloandroid.activity.TestActivity3;
-import com.example.liyang.helloandroid.activity.TestActivity4;
+import com.example.liyang.helloandroid.activity.TestActivity1_CustomView;
+import com.example.liyang.helloandroid.activity.TestActivity2_CustomViewGroup;
+import com.example.liyang.helloandroid.activity.TestActivity3_Scroll;
+import com.example.liyang.helloandroid.activity.TestActivity4_Draw;
+import com.example.liyang.helloandroid.activity.TestActivity5_SurfaceView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void initAdapter() {
         MainAdapter adapter = new MainAdapter(this.getBaseContext(), mDataList);
         mListView.setAdapter(adapter);
+//        mListView.setSelection(5);
     }
 
     private void initView() {
@@ -40,12 +42,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        mDataList.add("测试页面 - 0");
-        mDataList.add("测试页面 - 1");
-        mDataList.add("测试页面 - 2");
-        mDataList.add("测试页面 - 3");
-        mDataList.add("测试页面 - 4");
-        mDataList.add("测试页面 - 5");
+        mDataList.add("测试页面 - 1 - 自定义View");
+        mDataList.add("测试页面 - 2 - 自定义ViewGroup");
+        mDataList.add("测试页面 - 3 - 实现滑动的几种方式");
+        mDataList.add("测试页面 - 4 - 绘图机制与处理技巧");
+        mDataList.add("测试页面 - 5 - 正弦曲线(SurfaceView)");
         mDataList.add("测试页面 - 6");
         mDataList.add("测试页面 - 7");
         mDataList.add("测试页面 - 8");
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add("测试页面 - 13");
         mDataList.add("测试页面 - 14");
         mDataList.add("测试页面 - 15");
+        mDataList.add("测试页面 - 16");
     }
 
     private void initClickListener() {
@@ -71,16 +73,19 @@ public class MainActivity extends AppCompatActivity {
         Log.i("shaa", " listView position : " + position);
         switch (position) {
             case 0:
-                this.startActivity(new Intent(this, TestActivity1.class));
+                this.startActivity(new Intent(this, TestActivity1_CustomView.class));
                 break;
             case 1:
-                this.startActivity(new Intent(this, TestActivity2.class));
+                this.startActivity(new Intent(this, TestActivity2_CustomViewGroup.class));
                 break;
             case 2:
-                this.startActivity(new Intent(this, TestActivity3.class));
+                this.startActivity(new Intent(this, TestActivity3_Scroll.class));
                 break;
             case 3:
-                this.startActivity(new Intent(this, TestActivity4.class));
+                this.startActivity(new Intent(this, TestActivity4_Draw.class));
+                break;
+            case 4:
+                this.startActivity(new Intent(this, TestActivity5_SurfaceView.class));
                 break;
             default:
                 break;

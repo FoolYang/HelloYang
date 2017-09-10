@@ -13,9 +13,11 @@ import android.widget.TextView;
 
 /**
  * Created by liyang on 17/8/7.
+ *
+ * 对现有组件扩张 实现一个文字闪动的效果
  */
 
-public class CustomTextView extends TextView {
+public class CustomTextView2 extends TextView {
 
     private int mViewWidth;
     private Paint mPaint;
@@ -23,21 +25,18 @@ public class CustomTextView extends TextView {
     private LinearGradient mLinearGradient;
     private int mTranslate;
 
-    public CustomTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CustomTextView2(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public CustomTextView(Context context) {
+    public CustomTextView2(Context context) {
         super(context);
     }
 
-    public CustomTextView(Context context, AttributeSet attrs) {
+    public CustomTextView2(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    private void init() {
-
-    }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
@@ -65,10 +64,10 @@ public class CustomTextView extends TextView {
             if (mTranslate > 2 * mViewWidth) {
                 mTranslate = -mViewWidth;
             }
-            Log.i("shaa", "mTranslate :" + mTranslate);
+//            Log.i("shaa", "mTranslate :" + mTranslate);
             mGradientMatrix.setTranslate(mTranslate, 0);
             mLinearGradient.setLocalMatrix(mGradientMatrix);
-            postInvalidateDelayed(3000);
+            postInvalidateDelayed(100);
         }
     }
 }

@@ -9,10 +9,10 @@ import com.example.liyang.helloandroid.R;
  * Created by liyang on 17/8/16.
  */
 
-public class TestActivity2 extends Activity {
+public class TestActivity2_CustomViewGroup extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_test_activity_1);
+        setContentView(R.layout.layout_test_activity_2_custom_view_group);
     }
 }

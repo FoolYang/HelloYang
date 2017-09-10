@@ -6,13 +6,13 @@ import android.os.Bundle;
 import com.example.liyang.helloandroid.R;
 
 /**
- * Created by liyang on 17/8/16.
+ * Created by liyang on 17/9/10.
  */
 
-public class TestActivity1 extends Activity {
+public class TestActivity5_SurfaceView extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_test_activity_1);
+        setContentView(R.layout.layout_test_activity_4_surface_view);
     }
 }
