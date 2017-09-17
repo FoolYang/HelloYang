@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/puzzle_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="steps:"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/puzzle_steps_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="time:"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/puzzle_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/puzzle_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/puzzle_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/puzzles_normal_btn_bg"
+            android:text="原图"/>
+
+        <Button
+            android:id="@+id/puzzle_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/puzzles_normal_btn_bg"
+            android:text="重置"/>
+
+
+        <Button
+            android:id="@+id/puzzle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/puzzles_normal_btn_bg"
+            android:text="返回"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/puzzle_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/puzzle_bottom_layout"
+        android:layout_below="@id/puzzle_title_layout"
+        android:layout_centerInParent="true"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
