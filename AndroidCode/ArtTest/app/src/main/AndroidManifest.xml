@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.liyang.arttest">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,11 +18,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".chapter_2.MainActivity"
+        <activity android:name="com.android.liyang.arttest.chapter_2.MainActivity"
             android:label="chapter_2_MainActivity"/>
 
-        <activity android:name=".chapter_2.SecondActivity"
-            android:process="com.android.liyang.arttest.chapter_2:remote"
+        <activity android:name="com.android.liyang.arttest.chapter_2.SecondActivity"
+            android:process=":RemoteService"
             android:label="chapter_2_SecondActivity"/>
     </application>
 

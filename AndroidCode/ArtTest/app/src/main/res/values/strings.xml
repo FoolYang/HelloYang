@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ArtTest</string>
+
+    <array name="main_list">
+        <item> chapter 2 </item>
+        <item> chapter 3 </item>
+        <item> chapter 4 </item>
+        <item> chapter 5 </item>
+        <item> chapter 6 </item>
+        <item> chapter 7 </item>
+        <item> chapter 8 </item>
+        <item> chapter 9 </item>
+        <item> chapter 10 </item>
+        <item> chapter 11 </item>
+        <item> chapter 12 </item>
+    </array>
 </resources>
