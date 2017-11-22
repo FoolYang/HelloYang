@@ -1,9 +1,7 @@
 package com.example.hdmddc2.myapplication;
 
 import android.app.Activity;
-import android.content.Context;
 import android.graphics.Bitmap;
-import android.text.TextUtils;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,10 +28,15 @@ import java.util.Map;
 
 /**
  * Created by liyang on 2017/7/19.
+ *
+ * Volly请求工具类
  */
 
 public class VollyHelper {
 
+    /**
+     * 网络请求string
+     */
     public static void handleStringRequest(Activity activity) {
         String url = "https://www.douban.com/";
         final TextView textView = (TextView) activity.findViewById(R.id.txt_1);
@@ -61,7 +64,9 @@ public class VollyHelper {
         requestQueue.add(stringRequest);
     }
 
-
+    /**
+     * 网络请求json
+     */
     public static void handleJsonRequest(Activity activity) {
         final TextView textView = (TextView) activity.findViewById(R.id.txt_2);
         String url2 = "http://www.weather.com.cn/data/cityinfo/101010100.html";
@@ -81,7 +86,9 @@ public class VollyHelper {
         requestQueue.add(request);
     }
 
-
+    /**
+     * 网络请求image
+     */
     public static void handleImageRequest(Activity activity) {
         final ImageView view = (ImageView) activity.findViewById(R.id.img_3);
         String url3 = "http://img0.imgtn.bdimg.com/it/u=33594923,3823466401&fm=26&gp=0.jpg";
@@ -101,7 +108,9 @@ public class VollyHelper {
         requestQueue.add(request);
     }
 
-
+    /**
+     * ImageLoader请求image
+     */
     public static void handleImageLoader(Activity activity) {
         final ImageView view = (ImageView) activity.findViewById(R.id.img_4);
         String url4 = "http://img0.imgtn.bdimg.com/it/u=33594923,3823466401&fm=26&gp=0.jpg";
@@ -112,7 +121,9 @@ public class VollyHelper {
         imageLoader.get(url4, listener);
     }
 
-
+    /**
+     * 网络请求imageView
+     */
     public static void handleNetWorkImageView(Activity activity) {
         final NetworkImageView view = (NetworkImageView) activity.findViewById(R.id.img_5);
         String url5 = "http://img0.imgtn.bdimg.com/it/u=33594923,3823466401&fm=26&gp=0.jpg";
@@ -123,7 +134,9 @@ public class VollyHelper {
         view.setImageUrl(url5, imageLoader);
     }
 
-
+    /**
+     * 网络请求xml
+     */
     public static void handleXmlRequest(Activity activity) {
         final TextView textView = (TextView) activity.findViewById(R.id.txt_6);
         String url6 = "http://flash.weather.com.cn/wmaps/xml/china.xml";
@@ -164,6 +177,9 @@ public class VollyHelper {
         requestQueue.add(request);
     }
 
+    /**
+     * 网络请求gson
+     */
     public static void handleGsonRequest(Activity activity) {
         final TextView textView = (TextView) activity.findViewById(R.id.txt_7);
         String url7 = "http://www.weather.com.cn/data/sk/101010100.html";

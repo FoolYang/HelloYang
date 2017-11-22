@@ -4,6 +4,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+
+/**
+ * Vollly框架的学习使用
+ *
+ * 先在github上下载volly jar包  add进libs库
+ *
+ * git clone https://android.googlesource.com/platform/frameworks/volley
+ *
+ * 本页面简单的列了一些按钮和文本框，点击按钮后请求数据然后展示在文本框或者imageView上
+ */
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
 
     @Override

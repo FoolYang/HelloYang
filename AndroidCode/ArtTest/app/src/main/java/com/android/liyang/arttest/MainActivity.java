@@ -9,6 +9,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+/**
+ * android艺术探索 代码演练
+ *
+ * 源码地址
+ * https://github.com/singwhatiwanna/android-art-res
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
