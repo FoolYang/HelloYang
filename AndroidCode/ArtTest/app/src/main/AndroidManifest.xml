@@ -24,6 +24,13 @@
         <activity android:name="com.android.liyang.arttest.chapter_2.SecondActivity"
             android:process=":RemoteService"
             android:label="chapter_2_SecondActivity"/>
+
+        <activity android:name="com.android.liyang.arttest.chapter_2.messenger.MessengerActivity"/>
+
+        <service
+            android:name="com.android.liyang.arttest.chapter_2.messenger.MessengerService"
+            android:process=":remote"/>
+
     </application>
 
 </manifest>
