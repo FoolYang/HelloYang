@@ -3,6 +3,8 @@
     package="com.android.liyang.arttest">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.liyang.arttest.PROVIDER"/>
+
 
     <application
         android:allowBackup="true"
@@ -29,12 +31,25 @@
 
         <activity android:name=".chapter_2.aidl.BookManagerActivity"/>
 
+        <activity android:name=".chapter_2.provider.ProviderActivity"/>
+
+
+        <!--service-->
         <service
             android:name="com.android.liyang.arttest.chapter_2.messenger.MessengerService"
             android:process=":remote"/>
 
         <service android:name=".chapter_2.aidl.BookManagerService"
             android:process=":remote"/>
+
+
+        <!--provider-->
+        <provider
+            android:authorities="com.android.liyang.arttest.chapter_2.provider"
+            android:name=".chapter_2.provider.BookProvider"
+            android:permission="com.android.liyang.arttest.PROVIDER"
+            android:process=":provider">
+        </provider>
 
     </application>
 

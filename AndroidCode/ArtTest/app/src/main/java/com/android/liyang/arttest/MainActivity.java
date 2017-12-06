@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void onClickChapter2() {
         Log.i("art_test" , " -- onClickChapter2");
-        startActivity(new Intent(this, com.android.liyang.arttest.chapter_2.aidl.BookManagerActivity.class));
+        startActivity(new Intent(this, com.android.liyang.arttest.chapter_2.provider.ProviderActivity.class));
     }
 
     private void onClickChapter3() {
