@@ -27,8 +27,13 @@
 
         <activity android:name="com.android.liyang.arttest.chapter_2.messenger.MessengerActivity"/>
 
+        <activity android:name=".chapter_2.aidl.BookManagerActivity"/>
+
         <service
             android:name="com.android.liyang.arttest.chapter_2.messenger.MessengerService"
+            android:process=":remote"/>
+
+        <service android:name=".chapter_2.aidl.BookManagerService"
             android:process=":remote"/>
 
     </application>
