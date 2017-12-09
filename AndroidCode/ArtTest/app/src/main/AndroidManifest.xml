@@ -37,6 +37,8 @@
 
         <activity android:name=".chapter_2.socket.TCPClientActivity"/>
 
+        <activity android:name=".chapter_2.binderpool.BinderPoolActivity"/>
+
 
         <!--service-->
         <service
@@ -47,6 +49,9 @@
             android:process=":remote"/>
 
         <service android:name=".chapter_2.socket.TCPServerService"
+            android:process=":remote"/>
+
+        <service android:name=".chapter_2.binderpool.BinderPoolService"
             android:process=":remote"/>
 
 
