@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.android.liyang.arttest.chapter_4.CustomViewActivity;
+
 /**
  * android艺术探索 代码演练
  *
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void onClickChapter4() {
         Log.i("art_test" , " -- onClickChapter4");
+        startActivity(new Intent(this, CustomViewActivity.class));
     }
 
     private void onClickChapter5() {
