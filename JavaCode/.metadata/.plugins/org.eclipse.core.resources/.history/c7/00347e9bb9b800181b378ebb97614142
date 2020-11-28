@@ -1,0 +1,88 @@
+package reflect;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main
+{
+	public static ArrayList<Integer> printMatrix(int[][] matrix)
+	{
+		int rows = matrix.length;
+		int columns = matrix[0].length;
+ 
+		ArrayList<Integer> list = new ArrayList<Integer>();
+ 
+		int start = 0;
+		while (rows > start * 2 && columns > start * 2)
+		{
+			int endRow = rows - 1 - start;
+			int endColumn = columns - 1 - start;
+			for (int i = start; i <= endColumn; i++)
+				list.add(matrix[start][i]);
+			if (endRow > start)
+			{
+				for (int i = start + 1; i <= endRow; i++)
+					list.add(matrix[i][endColumn]);
+			}
+			if (endRow > start && endColumn > start)
+			{
+				for (int i = endColumn - 1; i >= start; i--)
+					list.add(matrix[endRow][i]);
+			}
+			if (endRow >= start + 2 && endColumn > start)
+			{
+				for (int i = endRow - 1; i > start; i--)
+					list.add(matrix[i][start]);
+			}
+			start++;
+		}
+		return list;
+	}
+ 
+	public static void main(String[] args)
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		String line = sc.nextLine();
+		
+		List<Integer> list = new ArrayList<>();
+		for (int i=0; i < line.length(); i++) {
+			if (Character.isDigit(line.charAt(i))) {
+				list.add(Integer.parseInt(String.valueOf(line.charAt(i))));
+			}
+		}
+		
+		int n = list.size();
+		
+		int L= (int) Math.sqrt(n);
+		
+		System.out.println(" L:" + L);
+		String[] s = line.split("],");
+		int L = s.length;
+		int[][] m = new int[L][L];
+		
+		for(int i = 0; i<L;i++) {
+			int index = 0;
+			 for (int j = 0; j <(s[i]).length(); j++) {
+				 if ( Character.isDigit((s[i].charAt(j)))) {
+					 m[i][index] = Integer.parseInt(String.valueOf(s[i].charAt(j)));
+					 index++;
+				 }
+				
+			 }
+		}
+	
+		ArrayList<Integer> printList = new ArrayList<Integer>();
+		printList = printMatrix(m);
+		for (int i = 0; i < printList.size(); i++)
+		{
+			if (i < printList.size() - 1) {
+				System.out.print(printList.get(i) + ",");
+			} else {
+				System.out.print(printList.get(i));
+			}
+			
+		}
+	}
+ 
+}

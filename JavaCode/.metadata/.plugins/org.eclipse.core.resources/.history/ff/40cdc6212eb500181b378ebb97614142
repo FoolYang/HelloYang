@@ -1,0 +1,91 @@
+package reflect;
+
+import java.util.Scanner;
+
+public class TestClass {
+	
+	public static void main(String[] args) {
+//		Scanner scanner = new Scanner(System.in);
+//		String firstLine = scanner.nextLine();
+//		String[] array = firstLine.split(" ");
+//		int n = Integer.parseInt(array[0].trim());
+//		int m = Integer.parseInt(array[1].trim());
+//		System.out.println("n:" + n + " m:" + m);
+		
+		System.out.println(getTestF(100));
+	}
+	
+	// n 站点数量   m:公交数量 a:公交路线
+	public int getMethods(int n, int m, int[][] a) {
+		if (n <= 0 || m <= 0) {
+			return 0;
+		}
+		int num = 0; // 所有公交总站数
+		int count = 1; // 回学校方法数
+		for (int i= 0; i < n; i++) {
+			int length = a[i][1] - a[i][0]; // 每一班公交走的站数
+			num = length + num;
+			if (hasTrans(num, a[i][1], a)) { // 当前站点是否支持换乘
+				count = 2 * count; 
+			}
+		}
+		if (num < m) { // 总公交站数小于回学校站数
+			return 0;
+		}
+		if (num == n) { // 总公交站数小于回学校站数
+			return 1;
+		}
+		return count;
+	}
+	
+	// 当前站点 是否支持换乘
+	private boolean hasTrans(int n, int trans, int[][] a) {
+		for (int i= 0; i < n; i++) {
+			// 下班车始发站比当前站早，终点站早于最后一站
+			if (a[i][0] <= trans && a[i][1] <= n) { 
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	// 思想：寻找最多交集数，遍历法
+	// 挨个选择每一组数据，找到和他交集数，最后选择最大的
+	public int getMaxNum(int n, int[][] a) {
+		int maxNum = 0;
+		for (int i = 0; i < n; i ++) {
+			int x = a[i][0];
+			int y = a[i][1]; // 当前数据的x和y
+			int num = 0;
+			for (int j = 0; j < n; j++) { // 分别和其他每一组比
+				if (i != j) { // 自己和自己就不比了
+					if (x < a[j][1] && y > a[j][0]) { // 有交集就加1
+						num++;
+					}
+				}
+			}
+			maxNum = num > maxNum ? num : maxNum;
+		}
+		return maxNum;
+	}
+	
+	public static int getTestF(int n) {
+		int f = getF(n);
+		System.out.println(" f :" + f);
+		if (f > 10000) {
+			return f%1000;
+		}
+		return f;
+	}
+	
+	public static int getF(int n) {
+		if (n == 1 || n == 2) {
+			return 1;
+		} else {
+			return getF(n -1) + getF(n -2);
+		}
+	}
+	
+	
+	
+}

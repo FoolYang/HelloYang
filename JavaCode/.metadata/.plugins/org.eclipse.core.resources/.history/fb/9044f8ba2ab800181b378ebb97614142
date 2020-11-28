@@ -1,0 +1,69 @@
+package reflect;
+
+// 媳妇代码学校之路
+
+//a++:先使用a，然后做加1操作
+	// ++a：先做+1操作，然后使用a
+
+public class ShaaTest {
+	public static void main(String[] args) {
+		int[] a = {1, 2, 2, 2, 3};
+		int n = 2;
+		System.out.println(getTimes(a, n));
+	}
+	
+	// 1、一个排序数组中给定数出现的次数，给出测试用例
+	public static int getTimes(int[] a, int n) {
+		int times = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (n == a[i]) {
+				times++;
+			}
+		}
+		return times;
+	}
+	
+	// 2、冒泡排序
+	/***
+	 * 
+	 * 
+	 * 
+	 * 
+	 * @param a
+	 * @return
+	 */
+	 public int[] bubbleSort(int[] a) {
+		 for(int i = 0; i < a.length; i++) {
+			 for (int j= 0; j < a.length - i; j++) {
+				 if (a[i] > a[j]) {
+					 int temp = a[i];
+					 a[i] = a[j];
+					 a[j] = temp;
+				 }
+			 }
+		 }
+		 return a;
+	 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,20 @@
+package reflect;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void  main(String [] args) {
+		Scanner scanner = new Scanner(System.in);
+		String line = scanner.nextLine();
+		if (line == null) {
+			return;
+		}
+		int a = changeInt(line.charAt(0));
+		
+		System.out.println("  : " + a);
+	}
+	
+	private static int changeInt(char a) {
+		return Integer.parseInt(String.valueOf(a));
+	}
+}

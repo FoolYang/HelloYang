@@ -1,0 +1,52 @@
+package reflect;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void  main(String [] args) {
+		Scanner scanner = new Scanner(System.in);
+		String line = scanner.nextLine();
+		int N = changeInt(line.charAt(0));
+		int M = changeInt(line.charAt(2));
+		int P = changeInt(line.charAt(4));
+		
+		String line2 = scanner.nextLine();
+		String[] strArray = line2.split(" ");
+		int [] Ai = new int[N];
+		for (int i = 0; i< N; i++) {
+			Ai[i] = Integer.parseInt(strArray[i]);
+		}
+		
+		
+		int m = 0;
+		int n = 0;
+		for (int i = 0; i< M; i++) {
+			int count=0;
+			String line3 = scanner.nextLine();
+			char type = line3.charAt(0);
+			if (type == 'B') {
+				
+				count = changeInt(line3.charAt(2)) + count;
+				Ai[m] = Ai[m] - count;
+				m++;
+			} else if (type == 'A') {
+				count = changeInt(line3.charAt(2)) + count;
+				Ai[n] = Ai[n] + count;
+				n++;
+			}
+		}
+		
+		int result=0;
+		for (int i = 0; i< N; i++) {
+			if (Ai[i] < Ai[P]) {
+				result++;
+			}
+		}
+		
+		System.out.println(result);
+	}
+	
+	private static int changeInt(char a) {
+		return Integer.parseInt(String.valueOf(a));
+	}
+}

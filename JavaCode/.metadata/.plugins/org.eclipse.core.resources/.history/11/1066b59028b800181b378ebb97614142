@@ -1,0 +1,50 @@
+package reflect;
+
+public class ShaaTest {
+	public static void main(String[] args) {
+	
+		int[] a = {1, 2, 2, 2, 3};
+		
+		int n = 2;
+		
+		System.out.println(getTimes(a, n));
+	}
+	
+	
+	// a++:先使用a，然后做加1操作
+	// ++a：先做+1操作，然后使用a
+	
+	// 一个排序数组中给定数出现的次数，给出测试用例
+	public static int getTimes(int[] a, int n) {
+		int times = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (n == a[i]) {
+				times++;
+			}
+		}
+		return times;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// 一个排序数组中给定数出现的次数，给出测试用例
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

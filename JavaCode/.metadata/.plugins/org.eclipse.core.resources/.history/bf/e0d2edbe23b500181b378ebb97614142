@@ -1,0 +1,15 @@
+package reflect;
+
+import java.util.Scanner;
+
+public class TestClass {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String firstLine = scanner.nextLine();
+		String[] array = firstLine.split(" ");
+		int n = Integer.parseInt(array[0]);
+		int m = Integer.parseInt(array[1]);
+		System.out.println("n:" + n + " m:" + m);
+	}
+}

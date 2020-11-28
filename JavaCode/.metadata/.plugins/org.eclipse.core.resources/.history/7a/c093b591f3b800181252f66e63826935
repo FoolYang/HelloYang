@@ -1,0 +1,62 @@
+
+package reflect;
+
+import java.util.Scanner;
+
+public class Main {
+ 
+	public static void main(String[] args) throws Exception {
+		Scanner input = new Scanner(System.in);
+		minF = 0;
+		int users = Integer.parseInt(input.nextLine());
+		int[][] u = new int[users][2];
+		for (int user = 0; user < users; user++) {
+			String line = input.nextLine();
+			int x = Integer.parseInt(String.valueOf(line.charAt(0)));
+			int y = Integer.parseInt(String.valueOf(line.charAt(2)));
+			u[user][0] = x;
+			u[user][1] = y;
+
+		}
+		count(u);
+
+	}
+
+	// 最短距离
+	private static int minF = 0;
+
+	private static int currentX = 0;
+	private static int currentY = 0;
+	
+	
+	public static void count(int[][] user) {
+
+		
+		
+		for (int i = 0; i < 10000; i++) {
+			for (int j = 0; j < 10000; j++) {
+				// 当前坐标距离
+				int currentDistance = 0;
+
+				// 计算当前节点到所有住户的距离和
+				for (int k = 0; k < user.length; k++) {
+					currentDistance += Math.abs(i - user[k][0]) + Math.abs(j - user[k][1]);
+				}
+
+				// 首次进来赋初始值
+				if ((i == 0) && (j == 0)) {
+					minF = currentDistance;
+				}
+				if (currentDistance < minF) {
+					currentX = i;
+					currentY = j;
+					minF = currentDistance;
+				}
+
+			}
+
+		}
+		System.out.print(minF);
+	}
+
+}

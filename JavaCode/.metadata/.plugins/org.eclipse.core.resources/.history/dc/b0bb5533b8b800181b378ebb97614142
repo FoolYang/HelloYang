@@ -1,0 +1,78 @@
+package reflect;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main
+{
+	public static ArrayList<Integer> printMatrix(int[][] matrix)
+	{
+		int rows = matrix.length;
+		int columns = matrix[0].length;
+ 
+		ArrayList<Integer> list = new ArrayList<Integer>();
+ 
+		int start = 0;
+		while (rows > start * 2 && columns > start * 2)
+		{
+			// 每一圈最后一行下标
+			int endRow = rows - 1 - start;
+			// 每一圈最后一列下标
+			int endColumn = columns - 1 - start;
+			// 开始一圈圈打印，每打印一圈分为四步，从左到右、从上到下、从右到左、从下到上
+			// 从左到右，第一步一定会走
+			for (int i = start; i <= endColumn; i++)
+				list.add(matrix[start][i]);
+			// 从上到下，最后一行大于开始行
+			if (endRow > start)
+			{
+				for (int i = start + 1; i <= endRow; i++)
+					list.add(matrix[i][endColumn]);
+			}
+			// 从右到左，最后一行大于开始行，最后一列大于开始列
+			if (endRow > start && endColumn > start)
+			{
+				for (int i = endColumn - 1; i >= start; i--)
+					list.add(matrix[endRow][i]);
+			}
+			// 从下到上,至少是三行两列，也就是最后一行大于开始行加2，最后一列大于开始列
+			if (endRow >= start + 2 && endColumn > start)
+			{
+				for (int i = endRow - 1; i > start; i--)
+					list.add(matrix[i][start]);
+			}
+			// 继续打印下一圈
+			start++;
+		}
+		return list;
+	}
+ 
+	public static void main(String[] args)
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		String line = sc.nextLine();
+		
+		String[] s = line.split("],");
+		int L = s.length;
+		int[][] m = new int[L][L];
+		
+		for(int i = 0; i<L;i++) {
+			int index = 0;
+			 for (int j = 0; j <(s[i]).length(); j++) {
+				 if ( Character.isDigit((s[i].charAt(j)))) {
+					 m[i][index] = Integer.parseInt(String.valueOf(s[i].charAt(j)));
+					 index++;
+				 }
+				
+			 }
+		}
+	
+		ArrayList<Integer> printList = new ArrayList<Integer>();
+		printList = printMatrix(m);
+		for (int i = 0; i < printList.size(); i++)
+		{
+			System.out.print(printList.get(i) + ",");
+		}
+	}
+ 
+}

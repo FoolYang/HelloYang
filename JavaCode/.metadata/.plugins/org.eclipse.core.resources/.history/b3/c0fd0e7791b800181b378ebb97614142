@@ -1,0 +1,21 @@
+package reflect;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void  main(String [] args) {
+		Scanner scanner = new Scanner(System.in);
+		String firstLine = scanner.nextLine();
+		if (firstLine == null) {
+			return;
+		}
+		if (firstLine != null) {
+			int a = firstLine.charAt(0);
+		}
+		char[] c = firstLine
+		
+		
+		
+		System.out.println(5);
+	}
+}
