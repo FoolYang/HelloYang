@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="get请求"
+        android:onClick="getRequest"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:onClick="postRequestStr"
+        android:text="post请求上传String数据"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:onClick="postRequestKV"
+        android:text="post请求上传键值对"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:onClick="postRequestUpFile"
+        android:text="post请求上传文件"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:onClick="getDownload"
+        android:text="get请求下载"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
