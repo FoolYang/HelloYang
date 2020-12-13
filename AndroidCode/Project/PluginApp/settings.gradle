@@ -1,0 +1,4 @@
+rootProject.name='PluginApp'
+include ':app'
+include ':plugincore'
+include ':tm'
